@@ -1,0 +1,4 @@
+= Testing
+
+Testing is one of the most important areas in software development. 
+For a long time I made the mistake of reducing it to just link:Automated-Testing.adoc[Automated Testing].
