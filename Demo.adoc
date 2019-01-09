@@ -1,13 +1,13 @@
 
 = Asciidoctor Demo
-Dan Allen <http://github.com/mojavelinux>
-v1.0.3, 2017-08-01
+Richard Gross <https://github.com/Richargh/>
 :imagesdir: images
 :experimental:
 :toc: preamble
 :toc-title: pass:[<b>Contents</b>]
 ifdef::env-github[]
 :tip-caption: :bulb:
+:note-caption: :information_source:
 endif::[]
 ifndef::env-github[]
 :idprefix:
@@ -25,9 +25,9 @@ This is a  multi-line comment.
 
 This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample] and the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference].
 
-It uses Asciidoctor in version {asciidoctor-version}.
+It uses Asciidoctor in version {asciidoctor-version} and the order is based on how often you might use it.
 
-== Inline markup
+== Markup
 
 *bold* and **b**older +
 _italic_ and __i__talicer +
@@ -37,14 +37,9 @@ There is also +
 ^super^script and ~sub~script +
 `monospace` and un``monospaced``
 
-== Html
+=== Html markup
 
 Use html directly for document edits to show +++<del>deleted</del> and <ins>inserted</ins>+++ text or for +++<s>not accurate stuff</s>+++.
-
-== Text Replacement
-
-Claim your copyright (C), registered trademark (R) or trademark (TM) ... +
-And don't forget about arrows -> <- => <=
 
 == Links
 
@@ -56,6 +51,7 @@ Lists can be :
 
 * unordered
 ** and nested
+
 . Ordered
 .. and nested
 
@@ -66,7 +62,9 @@ Lists can be :
 * [ ] not checked
 *     normal list item
 
-== Admonition
+== Blocks
+
+=== Admonition
 
 NOTE: This is a note
 
@@ -91,49 +89,8 @@ This is a longer note with
 - three
 ====
 
-== Quote
 
-[quote, Charles Lutwidge Dodgson]
-____
-If you don't know where you are going, any road will get you there.
-____
-
-
-[quote, Albert Einstein]
-A person who never made a mistake never tried anything new.
-
-== Horizontal Rule
-
-'''
-
-== Definition
-
-first term:: definition of first term
-second term:: 
-definition of second term
-
-== Diagram
-
-Diagrams can be drawn with mermaid
-[mermaid, test, png]   
-.... 
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-....
-
-== Image
-
-You can reference images image:icons/fontawesome/solid/anchor.svg[Anchor,10,10 title="Anchor"] inline or as a block:
-
-.An amazing anchor
-[#img-anchor]
-[caption="Figure 1: "]
-image::icons/fontawesome/solid/anchor.svg[Anchor,300,200]
-
-== Code
+=== Code
 
 Reference code like `types` or `methods` inline 
 
@@ -158,6 +115,29 @@ or directly from a file:
 include::code/hello.rb[]
 ----
 
+=== Quote
+
+[quote, Charles Lutwidge Dodgson]
+____
+If you don't know where you are going, any road will get you there.
+____
+
+
+[quote, Albert Einstein]
+A person who never made a mistake never tried anything new.
+
+
+== Image
+
+You can reference images image:icons/fontawesome/solid/anchor.svg[Anchor,10,10 title="Anchor"] inline or as a block:
+
+.An amazing anchor
+[#img-anchor]
+[caption="Figure 1: "]
+image::icons/fontawesome/solid/anchor.svg[Anchor,300,200]
+
+
+
 == Tables
 
 [cols="1,1,3", options="header"] 
@@ -173,7 +153,40 @@ include::code/hello.rb[]
 
 |===
 
-== Substitution
+
+== Diagram
+
+Diagrams can be drawn with mermaid
+[mermaid, test, png]   
+.... 
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+....
+
+== Tricks
+
+=== Definition
+
+first term:: definition of first term
+second term:: 
+definition of second term
+
+=== Footnotes
+
+A bold statement!footnoteref:[disclaimer,Opinions are my own.]
+
+Another bold statement with a reused footnote.footnoteref:[disclaimer]
+
+=== Horizontal Rule
+
+Content
+'''
+can be separated.
+
+=== Substitution
 
 :url-home: https://asciidoctor.org
 :summary: Asciidoctor is a mature, plain-text document format for \
@@ -183,11 +196,10 @@ Check out {url-home}[Asciidoctor]!
 
 {summary}
 
-== Footnotes
+=== Text Replacement
 
-A bold statement!footnoteref:[disclaimer,Opinions are my own.]
-
-Another bold statement with a reused footnote.footnoteref:[disclaimer]
+Claim your copyright (C), registered trademark (R) or trademark (TM) ... +
+And don't forget about arrows -> <- => <=
 
 == Bibliography
 
