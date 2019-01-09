@@ -111,21 +111,13 @@ end
 <2> URL mapping
 <3> HTTP response body
 
-or directly from a file:
-
-[source,ruby,indent=0]
-----
-include::code/hello.rb[]
-----
-
 === Quote
 
 [quote, Charles Lutwidge Dodgson]
 ____
 If you don't know where you are going, any road will get you there.
 ____
-
-
+{empty} +
 [quote, Albert Einstein]
 A person who never made a mistake never tried anything new.
 
