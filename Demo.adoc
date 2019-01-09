@@ -1,14 +1,13 @@
 = Asciidoctor Demo
 Richard Gross <https://github.com/Richargh/>
-:imagesdir: images
 :experimental:
 :toc: preamble
+:toc-title: pass:[<b>Contents</b>]
 
 This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample], the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference] and the link:https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74[Github Flavored Asciidoctor Gist].
 
 It uses Asciidoctor in version {asciidoctor-version} and the content order is based on how often you might use it.
 
-:toc-title: pass:[<b>Contents</b>]
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -50,7 +49,7 @@ Use html directly for document edits to show +++<del>deleted</del> and <ins>inse
 
 == Links
 
-:google: link:https://example.org
+:google: link:https://google.com
 
 Can go to external sites like {google}[Google] or to relative link:README.adoc[documents].
 
@@ -196,7 +195,9 @@ graph TD;
 === Horizontal Rule
 
 Content
+
 '''
+
 can be separated.
 
 === Substitution
