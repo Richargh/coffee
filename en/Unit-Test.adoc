@@ -1,7 +1,7 @@
 = Unit Test
 
 
-[quote, {feathers-unit}]
+[quote, 'link:https://www.artima.com/weblogs/viewpost.jsp?thread=126923[Michael Feathers]', 'link:https://www.artima.com/weblogs/viewpost.jsp?thread=126923[Michael Feathers]']
 ____
 A test is not a unit test if:
 
@@ -14,4 +14,4 @@ A test is not a unit test if:
 Tests that do these things aren't bad. Often they are worth writing, and they can be written in a unit test harness. However, it is important to be able to separate them from true unit tests so that we can keep a set of tests that we can run fast whenever we make our changes. 
 ____
 
-:feathers-unit: link:https://www.artima.com/weblogs/viewpost.jsp?thread=126923[Michael Feathers]
+:feathers-unit: 
