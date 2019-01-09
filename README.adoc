@@ -1,15 +1,5 @@
 = Coffee Book
 
-require 'asciidoctor-diagram/mermaid'
-
-[mermaid, test, png]   
-.... 
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-....
 
 A book for people that turn coffee into code. It's meant for user-need developers that want to look up things, find tidbits and links to further reading/hearing/watching material.
 
@@ -23,17 +13,19 @@ For the english version please link:en/Intro.adoc[start here].
 
 == Assets
 
-=== Images
+=== Icons
 
-Free images can be gathered from:
-
-- https://www.webdesignerdepot.com/2010/07/200-exclusive-free-icons-reflection/[200+ Exclusive Free Icons: “Reflection”]
+The free link:https://fontawesome.com/[Fontawesome] Icons are used for which the link:https://creativecommons.org/licenses/by/4.0/[CC by 4.0] applies. If you want to look for a new icon you should use the link:https://fontawesome.com/cheatsheet[Fontawesome Cheatsheet].
 
 === About AsciiDoc
 
-This text is written in AsciiDoc. Here is a link to the https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide].
-If you're just looking for a cheat sheet, check out the https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference].
+This text is written in AsciiDoc. Here is a link to the link:https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide].
+If you're just looking for a cheat sheet, check out the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference].
 
 If you want to see source files other people wrote in asciidoc, please look at:
 
-- https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/what-is-asciidoc.adoc[AsciiDoctor]
+- link:https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/what-is-asciidoc.adoc[AsciiDoctor]
+
+=== AsciiDoc Demo
+
+include::Demo.adoc[]
