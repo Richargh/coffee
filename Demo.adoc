@@ -136,7 +136,7 @@ Another bold statement with a reused footnote.footnoteref:[disclaimer]
 
 === Glossary
 
-See <<glossary>>.
+This is a reference to the <<glossaryentry>> in the <<glossary>>.
 
 === Quote
 
@@ -233,5 +233,5 @@ And don't forget about arrows -> <- => <=
 == Glossary
 
 first term:: definition of first term
-second term:: 
+[[glossaryentry]]second term:: 
 definition of second term
