@@ -50,13 +50,16 @@ Can go to external sites like link:http://google.com[Google] or to relative link
 
 == Lists
 
-Lists can be :
+=== Unordered
 
-* unordered
-** and nested
+* Unordered 1
+** Nested 2
+* level 1
 
-. Ordered
-.. and nested
+=== Ordered
+. Ordered 1
+.. and nested 2
+. level 1
 
 === Checklist
 
@@ -111,6 +114,27 @@ end
 <2> URL mapping
 <3> HTTP response body
 
+== Attributions
+
+== Bibliography
+
+_The Pragmatic Programmer_ <<pp>> should be required reading for all developers.
+To learn all about design patterns, refer to the book by the "`Gang of Four`" <<gof>>.
+
+You will find these books in the <<_Bibliography>>.
+
+=== Footnotes
+
+A bold statement!footnoteref:[disclaimer,Opinions are my own.]
+
+Another bold statement with a reused footnote.footnoteref:[disclaimer]
+
+=== Glossary
+
+first term:: definition of first term
+second term:: 
+definition of second term
+
 === Quote
 
 [quote, Charles Lutwidge Dodgson]
@@ -120,6 +144,10 @@ ____
 {empty} +
 [quote, Albert Einstein]
 A person who never made a mistake never tried anything new.
+{empty} +
+____
+If you don't know where you are going, any road will get you there.
+____
 
 
 == Image
@@ -132,6 +160,17 @@ You can reference images image:icons/fontawesome/solid/anchor.svg[Anchor,10,10 t
 image::icons/fontawesome/solid/anchor.svg[Anchor,300,200]
 
 
+== Diagram
+
+Diagrams can be drawn with mermaid
+[mermaid, test, png]   
+.... 
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+....
 
 == Tables
 
@@ -148,32 +187,7 @@ image::icons/fontawesome/solid/anchor.svg[Anchor,300,200]
 
 |===
 
-
-== Diagram
-
-Diagrams can be drawn with mermaid
-[mermaid, test, png]   
-.... 
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-....
-
 == Tricks
-
-=== Definition
-
-first term:: definition of first term
-second term:: 
-definition of second term
-
-=== Footnotes
-
-A bold statement!footnoteref:[disclaimer,Opinions are my own.]
-
-Another bold statement with a reused footnote.footnoteref:[disclaimer]
 
 === Horizontal Rule
 
@@ -196,13 +210,8 @@ Check out {url-home}[Asciidoctor]!
 Claim your copyright (C), registered trademark (R) or trademark (TM) ... +
 And don't forget about arrows -> <- => <=
 
-== Bibliography
-
-_The Pragmatic Programmer_ <<pp>> should be required reading for all developers.
-To learn all about design patterns, refer to the book by the "`Gang of Four`" <<gof>>.
-
 [bibliography]
-== References
+== Bibliography
 
 - [[[pp]]] Andy Hunt & Dave Thomas. The Pragmatic Programmer:
   From Journeyman to Master. Addison-Wesley. 1999.

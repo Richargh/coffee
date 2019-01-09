@@ -7,7 +7,8 @@ So far I have collected lots of interesting material but all in private, not vis
 
 For the english version please link:en/Intro.adoc[start here].
 
-If you want to see things that Github Flavored Asciidoc can do for you, you should check the link:Demo.adoc[demo].
+If you want to see things that Github Flavored Asciidoc can do for you, you should check the link:Demo.adoc[demo]. 
+Asciidoc is rather more powerful than Markdown, if you want to see a link:https://asciidoctor.org/docs/user-manual/#comparison-by-example[comparison].
 
 == Conventions
 
