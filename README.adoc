@@ -4,6 +4,8 @@ A book for people that turn coffee into code. It's meant for user-need developer
 
 So far I have collected lots of interesting material but all in private, not visible to anyone but myself. I am sure many of you have done the same. That seems wasteful. I would like to change that.
 
+For the english version please link:en/Intro.adoc[start here].
+
 == Assets
 
 === Images
