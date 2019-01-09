@@ -1,17 +1,18 @@
 
-Richard <foo@bar.communicate>
-:description: A demo of Asciidoctor. This document \
-              exercises some features of AsciiDoc \
-              so we can easily look them up here.
-:library: Asciidoctor
-:idprefix:
-:numbered:
-:imagesdir: images
-:toc: preamble
-
 = Asciidoctor Demo
-Doc Writer <doc.writer@asciidoctor.org>
-v1.0, 2014-01-01
+Dan Allen <http://github.com/mojavelinux>
+v1.0.3, 2017-08-01
+:imagesdir: images
+:experimental:
+:toc: preamble
+:toc-title: pass:[<b>Contents</b>]
+ifdef::env-github[]
+:tip-caption: :bulb:
+endif::[]
+ifndef::env-github[]
+:idprefix:
+:idseparator: -
+endif::[]
 
 
 ////
@@ -24,10 +25,7 @@ This is a  multi-line comment.
 
 This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample] and the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference].
 
-It uses {library} {asciidoctor-version}.
-
-TIP: This is a tip.
-That is over now.
+It uses Asciidoctor in version {asciidoctor-version}.
 
 == Inline markup
 
@@ -42,11 +40,10 @@ There is also +
 == Html
 
 Use html directly for document edits to show +++<del>deleted</del> and <ins>inserted</ins>+++ text or for +++<s>not accurate stuff</s>+++.
-With html you can also +++<mark>mark</mark>+++ text.
 
 == Text Replacement
 
-Claim your copyright (C), registered trademark (R) or trademark (TM) ... 
+Claim your copyright (C), registered trademark (R) or trademark (TM) ... +
 And don't forget about arrows -> <- => <=
 
 == Links
@@ -55,7 +52,8 @@ Can go to external sites like link:http://google.com[Google] or to relative link
 
 == Lists
 
-.Lists can be :
+Lists can be :
+
 * unordered
 ** and nested
 . Ordered
@@ -74,7 +72,8 @@ NOTE: This is a note
 
 Here are the other built-in admonition types:
 
-TIP: Pro tip...
+TIP: Pro tip
+that could go on and on...
 
 IMPORTANT: Don't forget...
 
@@ -94,7 +93,7 @@ This is a longer note with
 
 == Quote
 
-[quote, Charles Lutwidge Dodgson, and more info here]
+[quote, Charles Lutwidge Dodgson]
 ____
 If you don't know where you are going, any road will get you there.
 ____
@@ -156,7 +155,7 @@ or directly from a file:
 
 [source,ruby,indent=0]
 ----
-include::code/hello.rb[lines=1..1]
+include::code/hello.rb[]
 ----
 
 == Tables
