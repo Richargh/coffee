@@ -45,7 +45,12 @@ There is also +
 
 === Html markup
 
-Use html directly for document edits to show +++<del>deleted</del> and <ins>inserted</ins>+++ text or for +++<s>not accurate stuff</s>+++.
+Use html directly for document edits to 
+
+* show +++<del>deleted</del> and <ins>inserted</ins>+++ text
+* +++<s>not accurate stuff</s>+++
+* Unarticulated +++<u>speling</u>+++ mistakes
+* +++<ins>Y</ins>et <ins>A</ins>nother <ins>M</ins>arkup <ins>L</ins>anguage+++
 
 == Links
 
@@ -64,7 +69,14 @@ Can go to external sites like {google}[Google] or to relative link:README.adoc[d
 === Ordered
 . Ordered 1
 .. and nested 2
-. level 1
+. level 
+
+Ordered lists can also be started later
+
+[start=10]
+. Ordered 1
+. more ordered
+. most ordered
 
 === Checklist
 
@@ -200,6 +212,12 @@ Content
 
 can be separated.
 
+=== Makros
+
+Use a keybinding like kbd:[Ctrl+Shift+T] to open a new tab.
+
+Or select menu:View[Zoom > Reset] to reset the zoom level.
+
 === Substitution
 
 :url-home: https://asciidoctor.org
@@ -208,6 +226,8 @@ can be separated.
 
 Check out {url-home}[Asciidoctor]!
 
+Also look at {localdate} @ {localtime}
+
 {summary}
 
 === Text Replacement
@@ -215,10 +235,14 @@ Check out {url-home}[Asciidoctor]!
 Claim your copyright (C), registered trademark (R) or trademark (TM) ... +
 And don't forget about arrows -> <- => <=
 
+=== UTF-8
+
+µService
+
 :numbered!:
 
 [appendix]
-== Appendix
+== First Appendix
 
 [bibliography]
 [#bib]
