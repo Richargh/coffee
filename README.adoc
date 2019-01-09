@@ -7,9 +7,22 @@ So far I have collected lots of interesting material but all in private, not vis
 
 For the english version please link:en/Intro.adoc[start here].
 
-== Style
+== Conventions
 
-* Commits are made in the style of Angular.
+=== Commits
+Commits are made in the style of Angular.
+
+=== Writing Style
+
+More concrete writing suggestions like link:https://wiki.openstack.org/wiki/Documentation/Conventions/Writing_style[this] could be added in the future.
+
+=== Formatting
+
+Depending on the text element you might want to:
+
+* *draw attention* to it
+* denote _technical terms, transliterations, thoughts, authors_
+* inline `code references`
 
 == Assets
 
