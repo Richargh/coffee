@@ -8,6 +8,9 @@ Richard Gross <https://github.com/Richargh/>
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
 endif::[]
 ifndef::env-github[]
 :idprefix:
@@ -23,7 +26,7 @@ This is a  multi-line comment.
 // This is a single-line comment.
 
 
-This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample] and the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference].
+This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample], the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference] and the link:https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74[Github Flavored Asciidoctor Gist].
 
 It uses Asciidoctor in version {asciidoctor-version} and the content order is based on how often you might use it.
 

@@ -7,6 +7,8 @@ So far I have collected lots of interesting material but all in private, not vis
 
 For the english version please link:en/Intro.adoc[start here].
 
+If you want to see things that Github Flavored Asciidoc can do for you, you should check the link:Demo.adoc[demo].
+
 == Conventions
 
 === Commits
@@ -38,7 +40,3 @@ If you're just looking for a cheat sheet, check out the link:https://asciidoctor
 If you want to see source files other people wrote in asciidoc, please look at:
 
 - link:https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/what-is-asciidoc.adoc[AsciiDoctor]
-
-=== AsciiDoc Demo
-
-include::Demo.adoc[]
