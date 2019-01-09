@@ -4,7 +4,7 @@ A book for people that turn coffee into code. It's meant for user-need developer
 
 So far I have collected lots of interesting material but all in private, not visible to anyone but myself. I am sure many of you have done the same. That seems wasteful. I would like to change that.
 
-For the english version please link:en/Intro.adoc[start here].
+For the english version please link:en/README.adoc[start here].
 
 If you want to see things that Github Flavored Asciidoc can do for you, you should check the link:Demo.adoc[demo]. 
 Asciidoc is rather more powerful than Markdown, if you want to see a link:https://asciidoctor.org/docs/user-manual/#comparison-by-example[comparison].
