@@ -1,6 +1,5 @@
 = Coffee Book
 
-
 A book for people that turn coffee into code. It's meant for user-need developers that want to look up things, find tidbits and links to further reading/hearing/watching material.
 
 So far I have collected lots of interesting material but all in private, not visible to anyone but myself. I am sure many of you have done the same. That seems wasteful. I would like to change that.
@@ -12,8 +11,26 @@ Asciidoc is rather more powerful than Markdown, if you want to see a link:https:
 
 == Conventions
 
-=== Commits
-Commits are made in the style of Angular.
+=== Commit Messages
+Since commit messages are all about documentation I do not follow a strict scheme like link:https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines[Angular Style Commits]. However I want to adopt the good behaviors from link:https://chris.beams.io/posts/git-commit/[How to Write a Git Commit Message]. 
+
+The rules I adopted for commit messages are:
+
+* Capitalize the subject line
+* Do not end the subject line with a period
+* Use the imperative mood in the subject line
+
+`git commit -m "Fix typo in Demo"`
+
+For now I see no point to adding a body explaining the *why*. But that will change should the book grow.
+
+==== Examples
+
+* Restructure document for better readability.
+* Update getting started documentation
+* Remove unused documents
+* Release version 1.0.0
+
 
 === Writing Style
 
