@@ -116,12 +116,12 @@ end
 
 == Attributions
 
-== Bibliography
+=== Bibliography
 
 _The Pragmatic Programmer_ <<pp>> should be required reading for all developers.
 To learn all about design patterns, refer to the book by the "`Gang of Four`" <<gof>>.
 
-You will find these books in the <<_Bibliography>>.
+You will find these books in the <<bib>>.
 
 === Footnotes
 
@@ -211,6 +211,7 @@ Claim your copyright (C), registered trademark (R) or trademark (TM) ... +
 And don't forget about arrows -> <- => <=
 
 [bibliography]
+[#bib]
 == Bibliography
 
 - [[[pp]]] Andy Hunt & Dave Thomas. The Pragmatic Programmer:
