@@ -1,0 +1,16 @@
+= Definitons
+
+Once in a while it is useful to define certain terms so we all talk about the same things -or know that we don't.
+
+Good definitions are provided
+
+* for model, framework, method, manifesto and creed by link:https://cognitive-edge.com/blog/of-shoes-and-ships-and-sealing-wax/[Dave Snowden]
+
+Creed::
+A simple way of defining and remembering things that all know, or merely likely belief [...]
+Framework:: 
+Provides a way, or better ways, of looking at the world or an aspect of the world.  Ideally a framework provides different perspectives on an issue.  It allows things to be looked at from those perspectives. [...]
+Manifesto:: 
+Is an ideological statement of how things should be, or more frequently how they should not be. [...]
+Method:: 
+Represents a defined process or processes which if followed produce defined results. It may incorporate other methods [...]. At its heart it provides a *repeatable way of achieving result* [...]. By this definition _Scrum_ is a method and methods are all contextual and useful there.
