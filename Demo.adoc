@@ -1,9 +1,13 @@
-
 = Asciidoctor Demo
 Richard Gross <https://github.com/Richargh/>
 :imagesdir: images
 :experimental:
 :toc: preamble
+
+This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample], the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference] and the link:https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74[Github Flavored Asciidoctor Gist].
+
+It uses Asciidoctor in version {asciidoctor-version} and the content order is based on how often you might use it.
+
 :toc-title: pass:[<b>Contents</b>]
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -17,18 +21,18 @@ ifndef::env-github[]
 :idseparator: -
 endif::[]
 
+:numbered!:
+[abstract]
+== Example Abstract
+The optional abstract (one or more paragraphs) goes here.
 
+:numbered:
 ////
 This is a  multi-line comment.
 ////
 
 
 // This is a single-line comment.
-
-
-This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample], the link:https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference] and the link:https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74[Github Flavored Asciidoctor Gist].
-
-It uses Asciidoctor in version {asciidoctor-version} and the content order is based on how often you might use it.
 
 == Markup
 
@@ -46,7 +50,9 @@ Use html directly for document edits to show +++<del>deleted</del> and <ins>inse
 
 == Links
 
-Can go to external sites like link:http://google.com[Google] or to relative link:README.adoc[documents].
+:google: link:https://example.org
+
+Can go to external sites like {google}[Google] or to relative link:README.adoc[documents].
 
 == Lists
 
@@ -131,9 +137,7 @@ Another bold statement with a reused footnote.footnoteref:[disclaimer]
 
 === Glossary
 
-first term:: definition of first term
-second term:: 
-definition of second term
+See <<glossary>>.
 
 === Quote
 
@@ -210,6 +214,11 @@ Check out {url-home}[Asciidoctor]!
 Claim your copyright (C), registered trademark (R) or trademark (TM) ... +
 And don't forget about arrows -> <- => <=
 
+:numbered!:
+
+[appendix]
+== Appendix
+
 [bibliography]
 [#bib]
 == Bibliography
@@ -218,3 +227,10 @@ And don't forget about arrows -> <- => <=
   From Journeyman to Master. Addison-Wesley. 1999.
 - [[[gof,2]]] Erich Gamma, Richard Helm, Ralph Johnson & John Vlissides. Design Patterns:
   Elements of Reusable Object-Oriented Software. Addison-Wesley. 1994.
+
+[glossary]
+== Glossary
+
+first term:: definition of first term
+second term:: 
+definition of second term
