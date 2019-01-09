@@ -15,6 +15,14 @@ ifdef::env-github[]
 :tip-caption: :bulb:
 endif::[]
 
+////
+This is a  multi-line comment.
+////
+
+
+// This is a single-line comment.
+
+
 This Demo is inspired by the https://github.com/opendevise/asciidoc-samples/blob/master/demo.adoc[opendevice sample].
 It uses {library} {asciidoctor-version}.
 
@@ -38,9 +46,10 @@ There is also +
 
 Place html +++<b>HTML</b>+++ directly.
 
-== Symbols
+== Text Replacement
 
-Claim your copyright (C), registered trademark (R) or trademark (TM).
+Claim your copyright (C), registered trademark (R) or trademark (TM) ...
+And don't forget about arrows -> <- => <=
 
 == Links
 
@@ -75,6 +84,23 @@ WARNING: Watch out for...
 
 CAUTION: Ensure that...
 
+[NOTE]
+====
+This is a longer note with
+
+.A list
+- one
+- two
+- three
+====
+
+== Quote
+
+[quote, Charles Lutwidge Dodgson, 'Mathematician and author, also known as https://en.wikipedia.org/wiki/Lewis_Carroll[Lewis Carroll]']
+____
+If you don't know where you are going, any road will get you there.
+____
+
 == Horizontal Rule
 
 '''
@@ -97,159 +123,96 @@ graph TD;
     C-->D;
 ....
 
+== Images
 
-.Statement
-I swear I left it in _Guy\'s_ car. Let\'s go look for it.
+You can reference images image:icons/fontawsome/solid/anchor.svg[Anchor, title="Anchor"] inline or as a block:
 
-[[defs]]
-term::
-  definition
-line two
-[[another_term]]another term::
+.A mountain sunset
+[#img-sunset]
+[caption="Figure 1: ",link=https://www.flickr.com/photos/javh/5448336655]
+image::sunset.jpg[Sunset,300,200]
 
-  another definition, which can be literal (indented) or regular paragraph
+== Videos
 
-This should be a standalone paragraph, not grabbed by the definition list.
+Embed them from Youtube or Vimeo.
 
-[[nested]]
-* first level
-written on two lines
-* first level
-+
-....
-with this literal text
-....
+video::rPQoq7ThGAU[youtube]
 
-* first level
+or
 
- with more literal text
+video::67480300[vimeo]
 
-** second level
-*** third level
-- fourth level
-* back to +
-first level
+== Code
 
-// this is just a comment
+Reference code like `types` or `methods` inline 
 
-Let's make a horizontal rule...
+or as a block with callouts
 
-'''
-
-then take a break.
-
-////
-We'll be right with you...
-
-after this brief interruption.
-////
-
-== ...and we're back!
-
-Do you want to see a image:tiger.png[Tiger,50]?
-
-Do you feel safer with the tiger in a box?
-
-.Tiger in a box
-image::tiger.png[]
-
-include::include.adoc[]
-
-.Asciidoctor usage example. The listing should contain 5 lines.
 [source,ruby]
 ----
-require 'asciidoctor'
+require 'sinatra' // <1>
 
-doc = Asciidoctor.load '*This* is http://asciidoc.org[AsciiDoc]!', header_footer: true
+get '/hi' do // <2>
+  "Hello World!" // <3>
+end
+----
+<1> Library import
+<2> URL mapping
+<3> HTTP response body
 
-puts doc.convert
+or directly from a file:
+
+[source,ruby,indent=0]
+----
+include::lib/document.rb[lines=5..10]
 ----
 
-// TODO: Use ifdef to show output according to current backend
-.Output of Asciidoctor usage example
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="generator" content="Asciidoctor 0.1.4">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Untitled</title>
-<link rel="stylesheet" href="./asciidoctor.css">
-</head>
-<body class="article">
-<div id="header">
-</div>
-<div id="content">
-<div class="paragraph">
-<p><strong>This</strong> is <a href="http://asciidoc.org">AsciiDoc</a>!</p>
-</div>
-</div>
-<div id="footer">
-<div id="footer-text">
-Last updated 2014-01-28 20:11:37 MST
-</div>
-</div>
-</body>
-</html>
-```
+== Other Blocks
 
-=== Block Quotes and "`Smart`" Ones
+.Some Note
+****
+Hi there!.
+I have a story to tell.
+****
 
-____
-AsciiDoc is _so_ *powerful*!
-____
+== Tables
 
-This verse comes to mind.
+[cols="1,1,2", options="header"] 
+.Table with three columns, a header, and one row of content
+|===
+|Name
+|Role
+|Description
 
-[verse]
-La la la
+|Lord McTavish
+|Father
+|An idiot. That's it.
 
-Here's another quote:
+|===
 
-[quote, Sir Arthur Conan Doyle, The Adventures of Sherlock Holmes]
-____
-When you have eliminated all which is impossible, then whatever remains,
-however improbable, must be the truth.
-____
+== Substitution
 
-"`Get moving!`" he shouted.
+:url-home: https://asciidoctor.org
+:summary: Asciidoctor is a mature, plain-text document format for \
+     writing notes and more.
 
-== Getting Literal [[literally]]
+Check out {url-home}[Asciidoctor]!
 
- Want to get literal? Just prefix a line with a space (just 1 space will do).
+{summary}
 
-....
-I'll join that party, too.
-....
+== Footnotes
 
-We forgot to mention in <<ordered>> that you can change the numbering style.
+A bold statement!footnoteref:[disclaimer,Opinions are my own.]
 
-.. first item (yeah!)
-.. second item, looking `so mono`
-.. third item, `mono` it is!
+Another bold statement with a reused footnote.footnoteref:[disclaimer]
 
-// This attribute line will get reattached to the next block
-// despite being followed by a trailing blank line
-[id='wrapup']
+== Bibliography
 
-== Wrap-up
+_The Pragmatic Programmer_ <<pp>> should be required reading for all developers.
+To learn all about design patterns, refer to the book by the "`Gang of Four`" <<gof>>.
 
-NOTE: AsciiDoc is quite cool, you should try it!
+[bibliography]
+== References
 
-[TIP]
-.Info
-=====
-Go to this URL to learn more about it:
-
-* http://asciidoc.org
-
-Or you could return to the xref:first-steps-with-asciidoc[] or <<purpose,Purpose>>.
-=====
-
-Here's a reference to the definition of <<another_term>>, in case you forgot it.
-
-[NOTE]
-One more thing. Happy documenting!
-
-[[google]]When all else fails, head over to <http://google.com>.
+- [[[pp]]] Andy Hunt & Dave Thomas. The Pragmatic Programmer:
+  From Journeyman to Master. Addison-Wesley. 1999.
