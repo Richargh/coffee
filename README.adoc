@@ -1,0 +1,18 @@
+= Coffee Book
+
+A book for people that turn coffee into code. It's meant for user-need developers that want to look up things, find tidbits and links to further reading/hearing/watching material.
+
+So far I have collected lots of interesting material but all in private, not visible to anyone but myself. I am sure many of you have done the same. That seems wasteful. I would like to change that.
+
+== Assets
+
+=== Images
+
+Free images can be gathered from:
+
+- https://www.webdesignerdepot.com/2010/07/200-exclusive-free-icons-reflection/[200+ Exclusive Free Icons: “Reflection”]
+
+=== About AsciiDoc
+
+This text is written in AsciiDoc. Here is a link to the https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide].
+If you're just looking for a cheat sheet, check out the https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Quick Reference].
