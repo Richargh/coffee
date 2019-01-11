@@ -1,0 +1,3 @@
+= Working Copy test
+
+test with *working _copy_* app  
