@@ -1,0 +1,5 @@
+= GUI Architectures
+
+Explore their designs.
+
+https://martinfowler.com/eaaDev/uiArchs.html[Fowler]
